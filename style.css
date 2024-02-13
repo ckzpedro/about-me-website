@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     height: 100vh;
 }
 
@@ -64,16 +64,6 @@ header nav ul li{
     padding: 40px;
 }
 
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #ffffff;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
 /* ESTILO DO TOPO DO SITE */
 
 section.topo-do-site{
@@ -100,4 +90,57 @@ section.topo-do-site .flex{
 .btn-contato button:hover{
     box-shadow: 0px 0px rgb(255, 255, 255);
     transform: scale(1.05);
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: animation 15s ease-in-out infinite;
+}
+
+@keyframes animation {
+    0% {
+      transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateX(-5px) translateY(-5px) rotate(-2deg);
+    }
+    50% {
+      transform: translateX(5px) translateY(-5px) rotate(2deg);
+    }
+    75% {
+      transform: translateX(-5px) translateY(-5px) rotate(-2deg);
+    }
+    100% {
+      transform: translateX(0) translateY(0) rotate(0deg);
+    }
+  }
+
+
+  /* RODAPÉ FLUTUANTE */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes a {
+    margin-bottom: 10px;
+}
+
+.redes a{
+    color: #686868;
+    display: inline-block;
+    transition: .5s;
+}
+
+.redes a:hover{
+    transform: scale(1.20);
 }
