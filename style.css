@@ -138,6 +138,7 @@ section.topo-do-site .flex{
     text-align: justify;
     margin-top: 45px;
     transition: .5s;
+    cursor: pointer;
   }
 
   .especialidades .especialidades-box:hover{
